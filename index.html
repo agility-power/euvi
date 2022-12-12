@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top">
+      Осінні знижки до 50 %
+    </div>
+    <div class="header__middle">
+      <div class="container">
+        <div class="header__middle-inner">
+          <div class="header__middle-box">
+            <a class="header__city-link" href="#">
+              Kиїв
+            </a>
+            <a class="header__phone-link" href="tel:+380739939908">
+              +380 (73) 993 99 08
+            </a>
+          </div>
+          <div class="header__middle-box">
+            <a class="header__lang-link" href="#">
+              Укр
+            </a>
+            <a class="header__user-link" href="#">
+              Увійти
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container container__adaptive">
+      <div class="header__bottom">
+          <button class="header__btn-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        <nav class="menu">
+          <a class="menu__link" href="#">Новинки</a>
+          <a class="menu__link" href="#">Акціії</a>
+          <a class="menu__link" href="#">Блог</a>
+          <a class="menu__link" href="#">Відгуки</a>
+        </nav>
+        <a class="logo" href="#">
+          <svg width="158" height="66" viewBox="0 0 158 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.3628 27.1991C9.64671 26.1674 7.86722 25.3233 7.11796 24.6667C6.3687 24.0102 5.90041 23.1661 5.90041 22.322C5.90041 21.3841 6.3687 20.6338 7.30527 20.071C8.24185 19.5083 9.36574 19.1331 10.7706 19.1331C12.7374 19.1331 14.5169 19.6959 16.1091 20.9151C17.6076 22.0406 18.8251 23.635 19.668 25.6046C19.7617 25.7922 20.0427 25.9798 20.23 25.9798H20.511C20.8856 25.9798 21.1666 25.6984 21.1666 25.3233V17.7263C21.1666 17.3511 20.8856 17.0697 20.511 17.0697H20.0427C19.949 17.0697 19.7617 17.0697 19.668 17.1635C19.0124 17.6325 18.4505 17.9139 18.0759 17.9139C17.8886 17.9139 17.233 17.8201 16.1091 17.7263C13.393 17.3511 11.4262 17.0697 10.3023 17.0697C7.30527 17.0697 4.87018 17.9139 2.90338 19.6021C1.03023 21.2903 0 23.3537 0 25.7922C0 27.8556 0.655602 29.5438 1.87315 30.9507C3.18435 32.3575 5.7131 33.7644 9.74037 35.265C12.8311 36.4843 14.8915 37.516 15.8281 38.3601C16.7647 39.298 17.233 40.3297 17.233 41.5489C17.233 42.6744 16.7647 43.6123 15.7344 44.4564C14.7042 45.3005 13.4867 45.6757 12.0818 45.6757C8.05453 45.6757 4.49555 42.862 1.59218 37.1408C1.49852 36.9532 1.3112 36.7656 1.03023 36.7656H0.749259C0.374629 36.7656 0.0936574 37.047 0.0936574 37.4222V47.0825C0.0936574 47.4577 0.374629 47.7391 0.749259 47.7391H1.21755C1.40486 47.7391 1.49852 47.6453 1.59218 47.5515C2.24778 46.9887 3.09069 46.7074 4.12092 46.7074C4.77653 46.7074 5.90041 46.8949 7.49259 47.1763C9.08476 47.4577 10.6769 47.6453 12.2691 47.6453C14.9852 47.6453 17.4203 46.7074 19.5744 44.8316C21.7285 42.9558 22.8524 40.611 22.8524 37.8911C22.8524 35.5464 22.1031 33.5768 20.6983 31.8886C19.3871 30.2941 16.5774 28.6997 12.3628 27.1991Z"
+              fill="#343F24" />
+            <path
+              d="M99.4642 45.3005C99.4642 45.3005 99.4642 45.2067 99.4642 45.3005C99.4642 45.2067 99.3705 45.2067 99.3705 45.1129C97.4037 44.644 96.0925 44.0812 95.5306 43.3309C94.9686 42.5806 94.594 41.2675 94.594 39.298V17.7263C94.594 17.3511 94.313 17.0697 93.9384 17.0697H81.2946C81.2946 17.0697 81.2946 17.0697 81.201 17.0697L80.7327 17.1635V18.0076C80.7327 18.289 80.92 18.5704 81.201 18.6642C84.0107 19.2269 85.5092 20.6338 85.5092 22.8847V37.3284C85.5092 37.4222 85.5092 37.6097 85.4156 37.7035C84.1044 39.5793 82.9805 40.9862 81.9502 41.7365C80.8263 42.4868 79.5151 42.862 78.0166 42.862C76.2371 42.862 74.8323 42.393 73.802 41.5489C72.7718 40.611 72.3035 39.3918 72.3035 37.7973V17.7263C72.3035 17.3511 72.0226 17.0697 71.6479 17.0697H59.0042C59.0042 17.0697 59.0042 17.0697 58.9105 17.0697L58.4422 17.1635V17.9139C58.4422 18.1952 58.6295 18.4766 58.9105 18.5704C60.409 18.8518 61.5329 19.3207 62.0949 19.9772C62.7505 20.7276 63.1251 21.853 63.1251 23.4475V38.5476C63.1251 41.3613 64.0617 43.5185 65.8412 45.1129C67.6207 46.7074 70.0557 47.4577 73.2401 47.4577C78.0166 47.4577 82.0439 45.1129 85.3219 40.3296H85.5092V41.2675C85.5092 41.3613 85.5092 41.4551 85.5092 41.5489V46.5198C85.5092 47.1763 85.9775 47.6453 86.6331 47.6453H88.7872H88.8809H98.8086C99.1832 47.6453 99.4642 47.3639 99.4642 46.9887V45.4881C99.4642 45.3943 99.4642 45.3943 99.4642 45.3005Z"
+              fill="#343F24" />
+            <path
+              d="M53.1974 20.6338C50.3877 18.289 46.9223 17.1636 42.7078 17.1636C38.0249 17.1636 34.0913 18.6642 31.0006 21.6655C27.8162 24.6668 26.2241 28.3246 26.2241 32.8265C26.2241 37.1408 27.7226 40.7986 30.8133 43.7061C33.904 46.6136 37.7439 48.0204 42.3331 48.0204C45.8921 48.0204 49.0765 47.1763 51.8862 45.3943C54.4149 43.7999 56.3817 41.6427 57.6929 39.0166C57.8803 38.5477 57.5993 38.0787 57.131 38.0787C56.9437 38.0787 56.7564 38.1725 56.569 38.3601C53.7593 42.2993 50.294 44.2689 46.1731 44.2689C43.176 44.2689 40.6473 43.0496 38.6805 40.611C36.62 38.1725 35.6835 35.0774 35.6835 31.232C35.6835 31.0445 35.6835 30.8569 35.6835 30.6693C35.6835 30.2942 35.9644 30.0128 36.3391 30.0128H57.412C57.7866 30.0128 58.0676 29.6376 58.0676 29.2625C57.5056 25.6984 55.8198 22.791 53.1974 20.6338ZM47.9526 28.2308H36.4327C36.0581 28.2308 35.7771 27.9494 35.7771 27.5742C35.9644 25.1357 36.62 23.1661 37.6503 21.6655C38.7741 19.9773 40.2727 19.2269 42.0522 19.2269C43.8316 19.2269 45.3302 20.071 46.5477 21.7593C47.6716 23.2599 48.3272 25.2295 48.6082 27.5742C48.7018 27.9494 48.3272 28.2308 47.9526 28.2308Z"
+              fill="#343F24" />
+            <path
+              d="M157.438 45.0191C154.535 44.5502 153.036 42.862 153.036 40.1421V17.7263C153.036 17.3511 152.755 17.0697 152.381 17.0697H150.414H125.126V17.1635C124.845 17.2573 124.564 17.4449 124.564 17.8201V17.9139C124.564 18.1952 124.752 18.4766 125.126 18.5704C127.28 18.8518 128.311 19.9772 128.311 21.853C128.311 22.9785 127.936 24.3854 127.093 26.0736L122.223 35.8277C121.942 36.2967 121.286 36.2967 121.099 35.8277L114.637 23.2599C114.262 22.5096 114.075 21.853 114.075 21.2903C114.075 19.9772 114.918 19.0393 116.51 18.6642C116.791 18.5704 116.978 18.3828 116.978 18.0076V17.8201C116.978 17.4449 116.697 17.1635 116.322 17.1635H98.6212C98.2466 17.1635 97.9656 17.4449 97.9656 17.8201V17.9139C97.9656 18.1952 98.2466 18.4766 98.5276 18.5704C99.9324 18.758 101.056 19.2269 101.993 19.9772C103.023 20.8213 104.241 22.5096 105.458 24.9481L116.697 47.3639C116.791 47.5515 117.072 47.7391 117.259 47.7391H118.196C118.477 47.7391 118.664 47.6453 118.758 47.3639L129.528 25.5108C130.652 23.1661 131.776 21.3841 132.9 20.3524C134.024 19.3207 135.241 18.758 136.74 18.5704H137.489C140.58 18.5704 143.108 20.8213 143.67 23.635C143.67 23.7288 143.67 23.9164 143.67 24.0102V24.8543V39.5793C143.67 41.4551 143.296 42.7682 142.64 43.5185C141.985 44.175 140.767 44.7378 138.894 45.1129C138.8 45.1129 138.707 45.2067 138.613 45.2067C138.613 45.3005 138.519 45.3943 138.426 45.4881V47.0825C138.426 47.4577 138.707 47.7391 139.081 47.7391H157.344C157.719 47.7391 158 47.4577 158 47.0825V45.7695C158 45.3943 157.719 45.1129 157.438 45.0191Z"
+              fill="#343F24" />
+            <path
+              d="M153.598 5.81498C153.598 9.00384 150.976 11.63 147.791 11.63C144.607 11.63 141.985 9.00384 141.985 5.81498C141.985 2.62612 144.607 0 147.791 0C150.976 0 153.598 2.62612 153.598 5.81498Z"
+              fill="#343F24" />
+          </svg>
+        </a>
+        <form class="header__form" action="#">
+          <button class="header__form-btn" type="submit"></button>
+          <input class="header__form-input" type="text" placeholder="Крем, маска ...">
+        </form>
+        <div class="user-nav">
+          <a class="user-nav__link" href="#">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M4.51317 14.4082L11.4658 20.9395C11.7053 21.1644 11.825 21.2769 11.9662 21.3046C12.0298 21.3171 12.0952 21.3171 12.1588 21.3046C12.3 21.2769 12.4197 21.1644 12.6592 20.9395L19.6118 14.4082C21.568 12.5706 21.8055 9.5466 20.1603 7.42607L19.851 7.02734C17.8828 4.49058 13.9321 4.91601 12.5492 7.81365C12.3538 8.22296 11.7712 8.22296 11.5758 7.81365C10.1929 4.91601 6.24222 4.49058 4.27404 7.02735L3.96469 7.42607C2.31945 9.5466 2.557 12.5706 4.51317 14.4082Z"
+                stroke="#343F24" />
+            </svg>
+            <span class="user-nav__num">1</span>
+          </a>
+          <a class="user-nav__link" href="#">
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M8.625 12.5L8.625 8.5C8.625 6.29086 10.4159 4.5 12.625 4.5V4.5C14.8341 4.5 16.625 6.29086 16.625 8.5L16.625 12.5"
+                stroke="#343F24" stroke-linecap="round" />
+              <path
+                d="M4.31935 13.1678C4.46442 11.4269 4.53696 10.5565 5.11105 10.0282C5.68513 9.5 6.5586 9.5 8.30553 9.5H16.9445C18.6914 9.5 19.5649 9.5 20.139 10.0282C20.713 10.5565 20.7856 11.4269 20.9307 13.1678L21.4445 19.3339C21.529 20.3474 21.5712 20.8542 21.2741 21.1771C20.977 21.5 20.4685 21.5 19.4514 21.5H5.7986C4.78155 21.5 4.27302 21.5 3.97592 21.1771C3.67882 20.8542 3.72105 20.3474 3.80551 19.3339L4.31935 13.1678Z"
+                stroke="#343F24" />
+            </svg>
+            <span class="user-nav__num">1</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="top">
+      <div class="top__item">
+        Бренди
+      </div>
+      <div class="top__item">
+        Oбличчя
+      </div>
+      <div class="top__item">
+        Тіло
+      </div>
+      <div class="top__item">
+        Волосся
+      </div>
+      <div class="top__item">
+        Make Up
+      </div>
+      <div class="top__item">
+        Особливий догляд
+      </div>
+      <div class="top__item">
+        Гігієна
+      </div>
+      <div class="top__item">
+        Дім
+      </div>
+      <div class="top__item">
+        Набори
+      </div>
+      <div class="top__item">
+        Мініатюри
+      </div>
+    </div>
+    <section class="top-slider">
+      <div class="container">
+        <div class="top-slider__inner">
+          <div class="top-slider__item">
+            <div class="top-slider__item-box">
+              <h4 class="top-slider__title">
+                Outlet with 30% discount
+              </h4>
+              <p class="top-slider__subtitle">
+                Use the code OUTLET30 and benefit from 30% off our outlet. Only for a short time.
+              </p>
+              <a class="top-slider__link" href="#">SHOP now</a>
+            </div>
+          </div>
+          <div class="top-slider__item">
+            <div class="top-slider__item-box">
+              <h4 class="top-slider__title">
+                Outlet with 30% discount
+              </h4>
+              <p class="top-slider__subtitle">
+                Use the code OUTLET30 and benefit from 30% off our outlet. Only for a short time.
+              </p>
+              <a class="top-slider__link" href="#">SHOP now</a>
+            </div>
+          </div>
+          <div class="top-slider__item">
+            <div class="top-slider__item-box">
+              <h4 class="top-slider__title">
+                Outlet with 30% discount
+              </h4>
+              <p class="top-slider__subtitle">
+                Use the code OUTLET30 and benefit from 30% off our outlet. Only for a short time.
+              </p>
+              <a class="top-slider__link" href="#">SHOP now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="novetly">
+      <div class="container">
+        <h5 class="title">
+          Новинки
+        </h5>
+        <div class="novetly__slider-items">
+          <div class="novetly__item">
+            <div class="novetly__item-wrapper">
+              <div class="novetly__item-box">
+                <div class="novetly__img-box">
+                  <div class="novetly__box-top">
+                    <div class="novetly__img-top">NEW</div>
+                    <img class="novetly__box-img" src="images/icons/heart.svg" alt="heart icon">
+                  </div>
+                  <img class="novetly__item-img" src="images/novetly/1.png" alt="novetly imagese">
+                </div>
+              </div>
+              <div class="novetly__star-box">
+                <div class="star" data-rateyo-rating="5"></div>
+                <span class="novetly__star-text">10</span>
+              </div>
+              <h5 class="novetly__item-title">
+                Захисний крем для чутливої ​​шкіри Terrazen Blemish Relax Barrier Cream
+              </h5>
+              <p class="novetly__item-brand">
+                Etude House
+              </p>
+              <p class="novetly__item-sum">
+                930 грн
+              </p>
+              <a class="novetly__item-btn" href="#">Купити</a>
+            </div>
+          </div>
+          <div class="novetly__item">
+            <div class="novetly__item-wrapper">
+              <div class="novetly__item-box">
+                <div class="novetly__img-box">
+                  <div class="novetly__box-top">
+                    <div class="novetly__img-top">NEW</div>
+                    <img class="novetly__box-img" src="images/icons/heart.svg" alt="heart icon">
+                  </div>
+                  <img class="novetly__item-img" src="images/novetly/2.png" alt="novetly imagese">
+                </div>
+              </div>
+              <div class="novetly__star-box">
+                <div class="star" data-rateyo-rating="5"></div>
+                <span class="novetly__star-text">10</span>
+              </div>
+              <h5 class="novetly__item-title">
+                Зволожуючий тонер для обличчя Klairs Preparation Facial Toner
+              </h5>
+              <p class="novetly__item-brand">
+                Dear Klairs
+              </p>
+              <p class="novetly__item-sum">
+                835 грн
+              </p>
+              <a class="novetly__item-btn" href="#">Купити</a>
+            </div>
+          </div>
+          <div class="novetly__item">
+            <div class="novetly__item-wrapper">
+              <div class="novetly__item-box">
+                <div class="novetly__img-box">
+                  <div class="novetly__box-top">
+                    <div class="novetly__img-top">NEW</div>
+                    <img class="novetly__box-img" src="images/icons/heart.svg" alt="heart icon">
+                  </div>
+                  <img class="novetly__item-img" src="images/novetly/3.png" alt="novetly imagese">
+                </div>
+              </div>
+              <div class="novetly__star-box">
+                <div class="star" data-rateyo-rating="5"></div>
+                <span class="novetly__star-text">10</span>
+              </div>
+              <h5 class="novetly__item-title">
+                Нічна маска для обличчя Cosrx Ultimate Nourishing Rice Overnight Spa Mask
+              </h5>
+              <p class="novetly__item-brand">
+                Cosrx
+              </p>
+              <p class="novetly__item-sum">
+                563 грн
+              </p>
+              <a class="novetly__item-btn" href="#">Купити</a>
+            </div>
+          </div>
+          <div class="novetly__item">
+            <div class="novetly__item-wrapper">
+              <div class="novetly__item-box">
+                <div class="novetly__img-box">
+                  <div class="novetly__box-top">
+                    <div class="novetly__img-top">NEW</div>
+                    <img class="novetly__box-img" src="images/icons/heart.svg" alt="heart icon">
+                  </div>
+                  <img class="novetly__item-img" src="images/novetly/4.png" alt="novetly imagese">
+                </div>
+              </div>
+              <div class="novetly__star-box">
+                <div class="star" data-rateyo-rating="5"></div>
+                <span class="novetly__star-text">10</span>
+              </div>
+              <h5 class="novetly__item-title">
+                Зволожуюча маска для обличчя Dr.Jart Porecting Solution
+              </h5>
+              <p class="novetly__item-brand">
+                Dr. Jart
+              </p>
+              <p class="novetly__item-sum">
+                235 грн
+              </p>
+              <a class="novetly__item-btn" href="#">Купити</a>
+            </div>
+          </div>
+          <div class="novetly__item">
+            <div class="novetly__item-wrapper">
+              <div class="novetly__item-box">
+                <div class="novetly__img-box">
+                  <div class="novetly__box-top">
+                    <div class="novetly__img-top">NEW</div>
+                    <img class="novetly__box-img" src="images/icons/heart.svg" alt="heart icon">
+                  </div>
+                  <img class="novetly__item-img" src="images/novetly/1.png" alt="novetly imagese">
+                </div>
+              </div>
+              <div class="novetly__star-box">
+                <div class="star" data-rateyo-rating="5"></div>
+                <span class="novetly__star-text">10</span>
+              </div>
+              <h5 class="novetly__item-title">
+                Захисний крем для чутливої ​​шкіри Terrazen Blemish Relax Barrier Cream
+              </h5>
+              <p class="novetly__item-brand">
+                Etude House
+              </p>
+              <p class="novetly__item-sum">
+                930 грн
+              </p>
+              <a class="novetly__item-btn" href="#">Купити</a>
+            </div>
+          </div>
+          <div class="novetly__item">
+            <div class="novetly__item-wrapper">
+              <div class="novetly__item-box">
+                <div class="novetly__img-box">
+                  <div class="novetly__box-top">
+                    <div class="novetly__img-top">NEW</div>
+                    <img class="novetly__box-img" src="images/icons/heart.svg" alt="heart icon">
+                  </div>
+                  <img class="novetly__item-img" src="images/novetly/2.png" alt="novetly imagese">
+                </div>
+              </div>
+              <div class="novetly__star-box">
+                <div class="star" data-rateyo-rating="5"></div>
+                <span class="novetly__star-text">10</span>
+              </div>
+              <h5 class="novetly__item-title">
+                Зволожуючий тонер для обличчя Klairs Preparation Facial Toner
+              </h5>
+              <p class="novetly__item-brand">
+                Dear Klairs
+              </p>
+              <p class="novetly__item-sum">
+                835 грн
+              </p>
+              <a class="novetly__item-btn" href="#">Купити</a>
+            </div>
+          </div>
+          <div class="novetly__item">
+            <div class="novetly__item-wrapper">
+              <div class="novetly__item-box">
+                <div class="novetly__img-box">
+                  <div class="novetly__box-top">
+                    <div class="novetly__img-top">NEW</div>
+                    <img class="novetly__box-img" src="images/icons/heart.svg" alt="heart icon">
+                  </div>
+                  <img class="novetly__item-img" src="images/novetly/3.png" alt="novetly imagese">
+                </div>
+              </div>
+              <div class="novetly__star-box">
+                <div class="star" data-rateyo-rating="5"></div>
+                <span class="novetly__star-text">10</span>
+              </div>
+              <h5 class="novetly__item-title">
+                Нічна маска для обличчя Cosrx Ultimate Nourishing Rice Overnight Spa Mask
+              </h5>
+              <p class="novetly__item-brand">
+                Cosrx
+              </p>
+              <p class="novetly__item-sum">
+                563 грн
+              </p>
+              <a class="novetly__item-btn" href="#">Купити</a>
+            </div>
+          </div>
+          <div class="novetly__item">
+            <div class="novetly__item-wrapper">
+              <div class="novetly__item-box">
+                <div class="novetly__img-box">
+                  <div class="novetly__box-top">
+                    <div class="novetly__img-top">NEW</div>
+                    <img class="novetly__box-img" src="images/icons/heart.svg" alt="heart icon">
+                  </div>
+                  <img class="novetly__item-img" src="images/novetly/4.png" alt="novetly imagese">
+                </div>
+              </div>
+              <div class="novetly__star-box">
+                <div class="star" data-rateyo-rating="5"></div>
+                <span class="novetly__star-text">10</span>
+              </div>
+              <h5 class="novetly__item-title">
+                Зволожуюча маска для обличчя Dr.Jart Porecting Solution
+              </h5>
+              <p class="novetly__item-brand">
+                Dr. Jart
+              </p>
+              <p class="novetly__item-sum">
+                235 грн
+              </p>
+              <a class="novetly__item-btn" href="#">Купити</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="stock">
+      <div class="container">
+        <h3 class="title">
+          Акції
+        </h3>
+        <div class="stock-slider">
+          <div class="stock-slider__items">
+            <a class="stock-slider__item" href="#">
+              <div class="stock-slider__item-wrapper">
+                <div class="stock-slider__item-box">
+                  <div class="stock-slider__img-box">
+                    <div class="stock-slider__box-top">
+                      <img class="stock-slider__box-img" src="images/icons/heart.svg" alt="heart icon">
+                    </div>
+                    <img class="stock-slider__item-img" src="images/novetly/4.png" alt="novetly imagese">
+                  </div>
+                </div>
+                <div class="stock-slider__star-box">
+                  <div class="star" data-rateyo-rating="5"></div>
+                  <span class="stock-slider__star-text">10</span>
+                </div>
+                <h5 class="stock-slider__item-title">
+                  Зволожуюча маска для обличчя Dr.Jart Porecting Solution
+                </h5>
+                <p class="stock-slider__item-brand">
+                  Dr. Jart
+                </p>
+                <div class="stock-slider__box-sum">
+                  <p class="stock-slider__old-sum">
+                    1 015 грн
+                  </p>
+                  <p class="stock-slider__new-sum">
+                    930 грн
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a class="stock-slider__item stock-slider__item--sale" href="#">
+              <div class="stock-slider__item-wrapper">
+                <div class="stock-slider__item-box">
+                  <div class="stock-slider__img-box">
+                    <div class="stock-slider__box-top">
+                      <img class="stock-slider__box-img" src="images/icons/heart.svg" alt="heart icon">
+                    </div>
+                    <img class="stock-slider__item-img" src="images/novetly/3.png" alt="novetly imagese">
+                  </div>
+                </div>
+                <div class="stock-slider__star-box">
+                  <div class="star" data-rateyo-rating="5"></div>
+                  <span class="stock-slider__star-text">10</span>
+                </div>
+                <h5 class="stock-slider__item-title">
+                  Нічна маска для обличчя Cosrx Ultimate Nourishing Rice Overnight Spa Mask
+                </h5>
+                <p class="stock-slider__item-brand">
+                  Cosrx
+                </p>
+                <div class="stock-slider__box-sum">
+                  <p class="stock-slider__old-sum">
+                    1 015 грн
+                  </p>
+                  <p class="stock-slider__new-sum">
+                    930 грн
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a class="stock-slider__item stock-slider__item--sale" href="#">
+              <div class="stock-slider__item-wrapper">
+                <div class="stock-slider__item-box">
+                  <div class="stock-slider__img-box">
+                    <div class="stock-slider__box-top">
+                      <img class="stock-slider__box-img" src="images/icons/heart.svg" alt="heart icon">
+                    </div>
+                    <img class="stock-slider__item-img" src="images/novetly/2.png" alt="novetly imagese">
+                  </div>
+                </div>
+                <div class="stock-slider__star-box">
+                  <div class="star" data-rateyo-rating="5"></div>
+                  <span class="stock-slider__star-text">10</span>
+                </div>
+                <h5 class="stock-slider__item-title">
+                  Зволожуючий тонер для обличчя Klairs Preparation Facial Toner
+                </h5>
+                <p class="stock-slider__item-brand">
+                  Dear Klairs
+                </p>
+                <div class="stock-slider__box-sum">
+                  <p class="stock-slider__old-sum">
+                    1 015 грн
+                  </p>
+                  <p class="stock-slider__new-sum">
+                    930 грн
+                  </p>
+                </div>
+              </div>
+            </a>
+            <a class="stock-slider__item stock-slider__item--sale stock-slider__item--percent" href="#">
+              <div class="stock-slider__item-wrapper">
+                <div class="stock-slider__item-box">
+                  <div class="stock-slider__img-box">
+                    <div class="stock-slider__box-top">
+                      <img class="stock-slider__box-img" src="images/icons/heart.svg" alt="heart icon">
+                    </div>
+                    <img class="stock-slider__item-img" src="images/novetly/1.png" alt="novetly imagese">
+                  </div>
+                </div>
+                <div class="stock-slider__star-box">
+                  <div class="star" data-rateyo-rating="5"></div>
+                  <span class="stock-slider__star-text">10</span>
+                </div>
+                <h5 class="stock-slider__item-title">
+                  Захисний крем для чутливої ​​шкіри Terrazen Blemish Relax Barrier Cream
+                </h5>
+                <p class="stock-slider__item-brand">
+                  Etude House
+                </p>
+                <div class="stock-slider__box-sum">
+                  <p class="stock-slider__old-sum">
+                    1 015 грн
+                  </p>
+                  <p class="stock-slider__new-sum">
+                    930 грн
+                  </p>
+                </div>
+              </div>
+            </a>
+                <a class="stock-slider__item" href="#">
+                  <div class="stock-slider__item-wrapper">
+                    <div class="stock-slider__item-box">
+                      <div class="stock-slider__img-box">
+                        <div class="stock-slider__box-top">
+                          <img class="stock-slider__box-img" src="images/icons/heart.svg" alt="heart icon">
+                        </div>
+                        <img class="stock-slider__item-img" src="images/novetly/4.png" alt="novetly imagese">
+                      </div>
+                    </div>
+                    <div class="stock-slider__star-box">
+                      <div class="star" data-rateyo-rating="5"></div>
+                      <span class="stock-slider__star-text">10</span>
+                    </div>
+                    <h5 class="stock-slider__item-title">
+                      Зволожуюча маска для обличчя Dr.Jart Porecting Solution
+                    </h5>
+                    <p class="stock-slider__item-brand">
+                      Dr. Jart
+                    </p>
+                    <div class="stock-slider__box-sum">
+                      <p class="stock-slider__old-sum">
+                        1 015 грн
+                      </p>
+                      <p class="stock-slider__new-sum">
+                        930 грн
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="stock-slider__item stock-slider__item--sale" href="#">
+                  <div class="stock-slider__item-wrapper">
+                    <div class="stock-slider__item-box">
+                      <div class="stock-slider__img-box">
+                        <div class="stock-slider__box-top">
+                          <img class="stock-slider__box-img" src="images/icons/heart.svg" alt="heart icon">
+                        </div>
+                        <img class="stock-slider__item-img" src="images/novetly/3.png" alt="novetly imagese">
+                      </div>
+                    </div>
+                    <div class="stock-slider__star-box">
+                      <div class="star" data-rateyo-rating="5"></div>
+                      <span class="stock-slider__star-text">10</span>
+                    </div>
+                    <h5 class="stock-slider__item-title">
+                      Нічна маска для обличчя Cosrx Ultimate Nourishing Rice Overnight Spa Mask
+                    </h5>
+                    <p class="stock-slider__item-brand">
+                      Cosrx
+                    </p>
+                    <div class="stock-slider__box-sum">
+                      <p class="stock-slider__old-sum">
+                        1 015 грн
+                      </p>
+                      <p class="stock-slider__new-sum">
+                        930 грн
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="stock-slider__item stock-slider__item--sale" href="#">
+                  <div class="stock-slider__item-wrapper">
+                    <div class="stock-slider__item-box">
+                      <div class="stock-slider__img-box">
+                        <div class="stock-slider__box-top">
+                          <img class="stock-slider__box-img" src="images/icons/heart.svg" alt="heart icon">
+                        </div>
+                        <img class="stock-slider__item-img" src="images/novetly/2.png" alt="novetly imagese">
+                      </div>
+                    </div>
+                    <div class="stock-slider__star-box">
+                      <div class="star" data-rateyo-rating="5"></div>
+                      <span class="stock-slider__star-text">10</span>
+                    </div>
+                    <h5 class="stock-slider__item-title">
+                      Зволожуючий тонер для обличчя Klairs Preparation Facial Toner
+                    </h5>
+                    <p class="stock-slider__item-brand">
+                      Dear Klairs
+                    </p>
+                    <div class="stock-slider__box-sum">
+                      <p class="stock-slider__old-sum">
+                        1 015 грн
+                      </p>
+                      <p class="stock-slider__new-sum">
+                        930 грн
+                      </p>
+                    </div>
+                  </div>
+                </a>
+                <a class="stock-slider__item stock-slider__item--sale stock-slider__item--percent" href="#">
+                  <div class="stock-slider__item-wrapper">
+                    <div class="stock-slider__item-box">
+                      <div class="stock-slider__img-box">
+                        <div class="stock-slider__box-top">
+                          <img class="stock-slider__box-img" src="images/icons/heart.svg" alt="heart icon">
+                        </div>
+                        <img class="stock-slider__item-img" src="images/novetly/1.png" alt="novetly imagese">
+                      </div>
+                    </div>
+                    <div class="stock-slider__star-box">
+                      <div class="star" data-rateyo-rating="5"></div>
+                      <span class="stock-slider__star-text">10</span>
+                    </div>
+                    <h5 class="stock-slider__item-title">
+                      Захисний крем для чутливої ​​шкіри Terrazen Blemish Relax Barrier Cream
+                    </h5>
+                    <p class="stock-slider__item-brand">
+                      Etude House
+                    </p>
+                    <div class="stock-slider__box-sum">
+                      <p class="stock-slider__old-sum">
+                        1 015 грн
+                      </p>
+                      <p class="stock-slider__new-sum">
+                        930 грн
+                      </p>
+                    </div>
+                  </div>
+                </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="brands">
+      <div class="container">
+        <h5 class="brands__title title">
+          Бренди
+        </h5>
+        <div class="brands__inner">
+          <div class="brands__item">
+            <img src="images/brands/1.svg" alt="brands icon">
+          </div>
+          <div class="brands__item">
+            <img src="images/brands/2.svg" alt="brands icon">
+          </div>
+          <div class="brands__item">
+            <img src="images/brands/3.svg" alt="brands icon">
+          </div>
+          <div class="brands__item">
+            <img src="images/brands/4.svg" alt="brands icon">
+          </div>
+          <div class="brands__item">
+            <img src="images/brands/5.svg" alt="brands icon">
+          </div>
+          <div class="brands__item">
+            <img src="images/brands/6.svg" alt="brands icon">
+          </div>
+          <div class="brands__item">
+            <img src="images/brands/7.svg" alt="brands icon">
+          </div>
+          <div class="brands__item">
+            <img src="images/brands/8.svg" alt="brands icon">
+          </div>
+          <div class="brands__item">
+            <img src="images/brands/9.svg" alt="brands icon">
+          </div>
+          <div class="brands__item">
+            <a href="#">
+              <img src="images/brands/10.svg" alt="brands icon">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="info">
+      <div class="container">
+        <div class="info__inner">
+          <blockquote class="blockquote">
+            <h5 class="blockquote__title">
+              Корейская косметика
+            </h5>
+            <p class="blockquote__text">
+              Корейская косметика из Южной Кореи стала невероятно популярной среди косметологов, бьюти-экспертов, а
+              также
+              женщин всего
+              мира. Азиатские средства совмещают одновременно передовые научные технологии с древними традиционными
+              рецептами. В этом
+              причина
+              их высокой эффективности для кожи, волос, а также длительное видимое действие.
+            </p>
+            <p class="blockquote__text">
+              Преимущества корейской косметики
+              Уход за собой в восточных странах – настоящая философия, поэтому к производству косметических средств
+              отношение самое
+              серьезное,
+              с основательным подходом. Есть много причин, чтобы заказать корейскую косметику:
+            </p>
+            <ul class="blockquote__list">
+              <li>
+                процент натуральных компонентов в составе доходит до 99 %;
+              </li>
+              <li>
+                используются экзотические эффективные ингредиенты, которых не бывает в европейских и американских
+                средствах;
+              </li>
+              <li>
+                вся продукция абсолютно безопасна для здоровья;
+              </li>
+              <li>
+                стильное оформление – каждая упаковка представляет собой маленький шедевр;
+              </li>
+              <li>
+                в составе нет искусственных красителей, отдушек;
+              </li>
+              <li>
+                средства рассчитаны на длительное действие;
+              </li>
+              <li>
+                Производители Кореи вкладывают немало финансов в проведение исследований, продумывают каждый компонент
+                для
+                еще большего
+                улучшения качества продукции. В нашем интернет-магазине корейской косметики вы наверняка найдете нужные
+                вам
+                средства.
+              </li>
+            </ul>
+            <h5 class="blockquote__title">
+              Отличия корейской косметики от европейской
+            </h5>
+            <p class="blockquote__text">
+              Основная особенность косметических средств из Южной Кореи – это направленность не на кратковременную
+              маскировку дефектов
+              кожи,
+              а на длительный положительный эффект, поддержание оптимального состояния.
+              У нас вы можете выбрать товары из огромного ассортимента корейской косметики, купить с доставкой по Киеву
+              и
+              Украине.
+              Восточные средства для кожи и волос отличаются натуральным, органическим составом. В них вы найдете такие
+              редкие
+              ингредиенты, как:
+            </p>
+            <ul class="blockquote__list">
+              <li>
+                муцин улитки, богатый уникальными питательными веществами, полезными для кожи;
+              </li>
+              <li>
+                пептиды, которые способствуют разглаживанию мимических, возрастных морщин;
+              </li>
+              <li>
+                ласточкины гнезда – настоящая кладезь аминокислот и витаминов;
+              </li>
+              <li>
+                пчелиный яд, стимулирующий естественную выработку коллагена;
+              </li>
+              <li>
+                При этом у нас корейскую косметику можно купить по низкой цене, так как мы не делаем больших наценок.
+              </li>
+            </ul>
+            <h5 class="blockquote__title">
+              Лучшие бренды
+            </h5>
+            <p class="blockquote__text">
+              Чтобы вы лучше ориентировались, какую корейскую косметику купить в Украине, познакомьтесь с топовыми
+              брендами:
+            </p>
+            <ul class="blockquote__list">
+              <li>
+                Missha. Бренд, получивший множество престижных наград за разработку инновационных формул по уходу за
+                кожей
+                лица и тела.
+              </li>
+              <li>
+                Isntree. В нашем магазине корейская косметика этого бренда завоевала любовь покупателей. В ассортименте
+                гидрофильные
+                масла, увлажняющие кремы, маски, тонеры, восстанавливающие сыворотки и другие средства.
+              </li>
+              <li>
+                Manyo Factory. Продукты сертифицированы, отлично подходят для кожи европейского типа. Косметические
+                средства
+                помогают
+                улучшить общее состояние дермы, ускорить процессы регенерации, предотвратить преждевременное старение.
+              </li>
+              <li>
+                Real Barrier. Как и вся корейская косметика на сайте, продукты этого бренда состоят из натуральных
+                компонентов. Компания
+                стремится к постоянному совершенствованию, создавая все новые инновационные формулы и отлично
+                зарекомендовала себе в
+                восстановлении кожи.
+              </li>
+            </ul>
+            <p class="blockquote__text">
+              Узнать, сколько стоит корейская косметика, несложно – у всех товаров на сайте компании Seuvi указана цена.
+              Звоните нам,
+              мы с радостью расскажем об особенностях каждого средства, поможем подобрать программу ухода.
+            </p>
+          </blockquote>
+        </div>
+        <button class="info__btn">
+          Згорнути
+        </button>
+      </div>
+    </section>
+    <section class="social">
+      <div class="container">
+        <h3 class="social__title title">
+          <span>Стеж за нами</span>
+          В Соціальних мережах
+        </h3>
+        <div class="social__inner">
+          <a class="social__item" href="#">
+            <img src="images/social/inst.svg" alt="icon instagram">
+            <p class="social__num">
+              21,7 тисяч
+            </p>
+            <p class="social__text">
+              Followers
+            </p>
+          </a>
+          <a class="social__item" href="#">
+            <img src="images/social/tik-tok.svg" alt="icon instagram">
+            <p class="social__num">
+              70
+            </p>
+            <p class="social__text">
+              Followers
+            </p>
+          </a>
+          <a class="social__item" href="#">
+            <img src="images/social/facebook.svg" alt="icon instagram">
+            <p class="social__num">
+              398
+            </p>
+            <p class="social__text">
+              Followers
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="advice">
+      <div class="container">
+        <div class="advice__inner">
+          <img class="advice__inner-img" src="images/advice-bg.jpg" alt="images">
+          <div class="advice__content">
+            <h3 class="advice__title title">
+              Замовити Консультацію
+            </h3>
+            <p class="advice__subtitle">
+              індивідуальний підбір доглядової косметики, що підходить для вашого типу шкіри, а також дамо рекомендації
+              щодо
+              домашнього догляду
+            </p>
+            <form class="advice__form" action="#">
+              <input class="advice__input" type="number" placeholder="Ваш номер телефону">
+              <button class="advice__btn" type="submit">
+                Отримати консультацію
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__item">
+          <p class="footer__item-title">
+            Про магазин
+          </p>
+          <a class="footer__item-link" href="#">Карта сайту</a>
+          <a class="footer__item-link" href="#">Зв'язатися з нами</a>
+        </div>
+        <div class="footer__item">
+          <p class="footer__item-title">
+            Клієнтам
+          </p>
+          <a class="footer__item-link" href="#">Доставка</a>
+          <a class="footer__item-link" href="#">Оплата</a>
+          <a class="footer__item-link" href="#">Повернення товару</a>
+          <a class="footer__item-link" href="#">Контакти</a>
+          <a class="footer__item-link" href="#">Про компанію</a>
+          <a class="footer__item-link" href="#">Політика конфідеційності</a>
+          <a class="footer__item-link" href="#">Подарункові сертифікати</a>
+        </div>
+        <div class="footer__item">
+          <p class="footer__item-title">
+            Особистий Кабінет
+          </p>
+          <a class="footer__item-link" href="#">Особистий кабінет</a>
+          <a class="footer__item-link" href="#">Історія замовлень</a>
+          <a class="footer__item-link" href="#">Закладки</a>
+        </div>
+        <div class="footer__item">
+          <p class="footer__item-title">
+            Зв'язатися з нами
+          </p>
+          <a class="footer__item-link footer__item-location" href="#">м. Київ, пр. Степана Бандери 21
+            (вхід з вул. Єрмака)</a>
+          <div class="footer__item-phone">
+            <a class="footer__item-link" href="#">+ 380 (98) 993 99 08</a>
+            <a class="footer__item-link" href="#">
+              + 380 (73) 993 99 08</a>
+          </div>
+          <a class="footer__item-link footer__item-email" href="#">sales@seuvi.com.ua</a>
+        </div>
+      </div>
+      <div class="footer__social">
+        <a class="footer__social-link" href="#">
+          <img src="images/icons/facebook.svg" alt="facebook icon">
+        </a>
+        <a class="footer__social-link" href="#">
+          <img src="images/icons/instagram.svg" alt="instagram icon">
+        </a>
+        <a class="footer__social-link" href="#">
+          <img src="images/icons/tik-tok.svg" alt="tik-tok icon">
+        </a>
+        <a class="footer__social-link" href="#">
+          <img src="images/icons/telegram.svg" alt="telegram icon">
+        </a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p class="footer__copy">
+        Seuvi © 2022. Усі права захищені.
+        Доставляємо корейську косметику в такі міста: Київ, Харків, Дніпро, Львів, Івано-Франківськ, Чернівці,
+        Тернопіль,
+        Хмельницький, Вінниця, Чернігів, Житомир, Черкаси, Кропивницький, Одеса, Миколаїв, Запоріжжя, Суми, Рівне,
+        Полтава,
+        Ужгород і по іншим містам України.
+      </p>
+      <div class="footer__bottom-box">
+        <img class="footer__bottom-img" src="images/icons/footer-1.svg" alt="icon">
+        <img class="footer__bottom-img" src="images/icons/footer-2.svg" alt="icon">
+        <img class="footer__bottom-img" src="images/icons/footer-3.svg" alt="icon">
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
