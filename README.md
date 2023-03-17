@@ -1,2 +1,2 @@
 # euvi Сайт косметики
-agility-power.github.io/euvi/
+https://agility-power.github.io/euvi/
